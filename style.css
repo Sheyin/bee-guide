@@ -1,0 +1,70 @@
+.header-title {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 8em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.main-choice {
+  width: 200px;
+  height: 300px;
+  border: 3px dashed #3D3D37;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #F4F7EF;
+  margin: 5px;
+  font-size: 1.7em;
+  vertical-align: bottom;
+}
+
+/* Needs to be fixed. */
+.main-choice-image {
+  background-image: url("image/honeycomb.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-color: #F4F7EF;
+  background-size: 100% 100%;
+}
+
+#main-image-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  background-image: url("image/main-flower-exploded.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: white;
+  background-size: contain;
+  text-align: center;
+  color: #3D3D37;
+}
+
+@media (min-width: 600px) {
+  /* Possible override some of bootstrap's defaults */
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 599px) {
+  /* Possible override some of bootstrap's defaults */
+  .container {
+    max-width: 95%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
