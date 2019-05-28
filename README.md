@@ -6,6 +6,6 @@ Written for the [Options](https://minecraft.curseforge.com/projects/options?game
 Feedback / corrections / suggestions are welcome!  I'm not an expert, just someone trying to help more people appreciate these lovely bees!
 
 Credits for the mods go to their respective creators.  Please visit their websites for more information!
--[Forestry](https://forestryforminecraft.info/)
--[Gendustry](https://bdew.net/gendustry/)
--[Career Bees](https://minecraft.curseforge.com/projects/career-bees)
+- [Forestry](https://forestryforminecraft.info/)
+- [Gendustry](https://bdew.net/gendustry/)
+- [Career Bees](https://minecraft.curseforge.com/projects/career-bees)
