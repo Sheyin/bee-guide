@@ -5,42 +5,96 @@ $magenta: #770BA7;
 $dark-grey: #3D3D37;
 $light-grey: #F4F7EF;
 
+h1 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 6em;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:link {
+    color: $spring-green;
+}
+
+a:visited {
+    color: $spring-green;
+}
+
+a:focus {
+    color: $orange;
+}
+
+a:hover {
+    color: $orange;
+    text-decoration: none;
+}
+
+a:active {
+    color: $magenta;
+    text-decoration: none;
+}
+
 
 .header-title {
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Reenie Beanie', cursive;
     font-size: 8em;
     font-weight: bold;
     display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .main-choice {
     width: 200px;
-    height: 300px;
-    border: 3px dashed $dark-grey;
+    height: 290px;
+    border: 3px solid $dark-grey;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     background-color: $light-grey;
     margin: 5px;
     font-size: 1.7em;
-    vertical-align: bottom;
+    text-align: center;
+    position: relative;
+    display: block;
 }
 
-/* Needs to be fixed. */
+.main-choice-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: $light-grey;
+    border: 0px;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Needs to be fixed.  Not currently used */
 .main-choice-image {
+    /*
     background-image: url("image/honeycomb.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
     background-color: $light-grey;
     background-size: 100% 100%;
+    position: relative; */
 }
 
 #main-image-choice {
-    display: flex;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 body {
@@ -48,10 +102,36 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-color: white;
     background-size: contain;
     color: $dark-grey;
 }
+
+#main-choice-intro {
+    background-image: url("image/buttonHive1.jpg");
+    display: block;
+    /*
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    */
+}
+
+#main-choice-starting {
+    background-image: url("image/buttonHive2.jpg");
+}
+
+#main-choice-gendustry {
+    background-image: url("image/buttonHive3.jpg");
+}
+
+#main-choice-career {
+    background-image: url("image/buttonHive4.jpg");
+}
+
+#main-choice-links {
+    background-image: url("image/buttonHive5.jpg");
+}
+
 
 
 @media (min-width: 600px) {
