@@ -31,7 +31,7 @@ a:focus {
 }
 
 a:hover {
-    color: $orange;
+    color: $magenta;
     text-decoration: none;
 }
 
@@ -99,11 +99,12 @@ a:active {
 
 body {
     background-image: url("image/main-flower-exploded.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;
     color: $dark-grey;
+    height: 100%;
 }
 
 #main-choice-intro {
@@ -132,18 +133,75 @@ body {
     background-image: url("image/buttonHive5.jpg");
 }
 
+.tipbox {
+    border: 3px dashed $dark-grey;
+    background-color: $spring-green;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    vertical-align: center;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    a:link {
+        color: $magenta;
+    }
+    
+    a:visited {
+        color: $magenta;
+    }
+    
+    a:focus {
+        color: $orange;
+    }
+    
+    a:hover {
+        color: $yellow;
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: $orange;
+        text-decoration: none;
+    }
+}
+
+.tipbox::before {
+    content: "Tip: ";
+    font-weight: bold;
+}
+
+.contains-tipbox {
+    display: flex;
+    align-items: center;
+}
+
+html {
+    height: 100%;
+}
 
 
 @media (min-width: 600px) {
     /* Possible override some of bootstrap's defaults */
-    .container {
+    .container-addon {
         max-width: 70%;
+        background-color: $light-grey;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
 @media (max-width: 599px) {
     /* Possible override some of bootstrap's defaults */
-    .container {
+    .container-addon {
         max-width: 95%;
+        background-color: $light-grey;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

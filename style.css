@@ -24,7 +24,7 @@ a:focus {
 }
 
 a:hover {
-  color: #FBD503;
+  color: #770BA7;
   text-decoration: none;
 }
 
@@ -99,11 +99,12 @@ a:active {
 
 body {
   background-image: url("image/main-flower-exploded.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center;
   background-attachment: fixed;
   background-size: contain;
   color: #3D3D37;
+  height: 100%;
 }
 
 #main-choice-intro {
@@ -132,17 +133,79 @@ body {
   background-image: url("image/buttonHive5.jpg");
 }
 
+.tipbox {
+  border: 3px dashed #3D3D37;
+  background-color: #95E806;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+  vertical-align: center;
+}
+
+.tipbox a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tipbox a:link {
+  color: #770BA7;
+}
+
+.tipbox a:visited {
+  color: #770BA7;
+}
+
+.tipbox a:focus {
+  color: #FBD503;
+}
+
+.tipbox a:hover {
+  color: #F0F905;
+  text-decoration: none;
+}
+
+.tipbox a:active {
+  color: #FBD503;
+  text-decoration: none;
+}
+
+.tipbox::before {
+  content: "Tip: ";
+  font-weight: bold;
+}
+
+.contains-tipbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html {
+  height: 100%;
+}
+
 @media (min-width: 600px) {
   /* Possible override some of bootstrap's defaults */
-  .container {
+  .container-addon {
     max-width: 70%;
+    background-color: #F4F7EF;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
 @media (max-width: 599px) {
   /* Possible override some of bootstrap's defaults */
-  .container {
+  .container-addon {
     max-width: 95%;
+    background-color: #F4F7EF;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
