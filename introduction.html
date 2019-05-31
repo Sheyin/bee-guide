@@ -17,9 +17,9 @@
                <h1>Introduction</h1>
             <p>
                 So, you want to learn about bees?  It can be a little intimidating at first, but it's actually quite easy to get started.  The official 
-                <a href="https://forestryforminecraft.info">Forestry</a> site has a good lore-flavored guide, but I’ll also cover some details below.  
-                This guide will also focus a bit more on Gendustry and Career Bees.  The basic principles of Forestry will be covered, but Gendustry tends to 
-                take away a lot of the tedium (and surprises / challenges), so it’s up to you how you want to do your bees!
+                <a href="https://forestryforminecraft.info">Forestry</a> site has a good lore-flavored guide, and it's good to know the basics, but this 
+                guide will be more focused on using Gendustry and Career Bees.  The basic principles of Forestry will be covered, but Gendustry tends to 
+                take away a lot of the tedium (and surprises / challenges) of bee breeding, so ultimately it’s up to you how you want to do your bees!
             </p>  
             </div>
         </div>
@@ -29,7 +29,8 @@
                 <h2>Why bees?</h2>
                 <p>
                     It’s a little different than your usual progression route.  Forestry and Extra Bees give you resources, but unless you set up quite a 
-                    few / go deep in with progression, you probably won’t be profiting for a while.  Also, it won’t compare at all to a quarry / resource miner. 
+                    few / go deep in with progression, you probably won’t be amazed by the rate of production, though you can specify which resources
+                    you want by breeding just those bees.  Also, it won’t compare at all to a quarry / resource miner. 
                 </p>
             </div>
         </div>
@@ -38,38 +39,56 @@
             <div class="col">
                 <p>
                 On the upside, Career Bees gives bees a bit more leverage in a world dominated by tech mods.  They have buffs that stack with other 
-                enchantments, repairing, can automate smelting/crushing, set up mining bees, farm livestock, and even accelerate other machines.
+                enchantments, repairing, can automate smelting/crushing, set up mining bees, farm livestock, and even accelerate other machines.  Also,
+                they're much more cost efficient, consume little power, and easy to scale for larger setups.
                 </p> 
             </div>  
         </div>
         
         <div class="row">
-            <div class="col">
+            <div class="col-8">
                 <h2>What do you need to get started?</h2>
                 <p>
-                If you’re in the early game, all you need is some wood and a bit of wool.  An early diamond and a bit of copper/tin will let you have the basics.  
-                However, if you can afford to start going into Gendustry from the start, you’ll need a decent amount of resources (tin, copper, diamonds, 
-                redstone and glass, as well as a healthy supply of RF(FE)) but it will take all the guesswork out of the process.  Also, you’ll want some 
-                vanilla flowers (poppies, dandelions, blue orchids, etc.)
+                If you’re in the early game, all you need is some wood and a bit of wool to make a scoop.  An early diamond and a bit of copper/tin 
+                will let you have the basics.  However, if you can afford to start going into Gendustry from the start, you’ll need a decent amount of 
+                resources (tin, copper, diamonds, redstone and glass, as well as a healthy supply of RF(FE)) but it will take all the guesswork out of the 
+                process.  Also, you’ll want some vanilla flowers (poppies, dandelions, blue orchids, etc.) nearby to do your breeding.
                 </p>
+            </div>
+
+            <div class="col-4 contains-tipbox">
+                <img src="image/scoop.png" alt="Scoop: One of your first tools.">
             </div>
         </div>
         
         <div class="row">
             <div class="col">
                 <h2>Biome Considerations</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
                 <p>
                 While not absolutely necessary, you may want to consider your environment before you start setting up your bee breeding area.  Most bees, particularly
                 the ones from Career Bees, prefer normal / moderate climates, like those found in Plains, Forests, or Rivers (or modded ones with these characteristics).
-                If you don't have access to one, there are ways around it, but it will be a bit more challenging / costly to do.
+                If you don't have access to one, there are ways around it, but it will be a bit more challenging / costly to do.  For example, a Mengelin biome is considered
+                cold, so bees preferring normal temperatures will refuse to work until they are placed in a warmer environment.
+                <br />
+                    <button name="suggested-fixes" value="false" id="suggested-fixes-button" onClick="showMore('suggested-fixes', this.value)">Suggested fixes - click to show info</button>
                 </p>
             </div>
-            
+
+            <div class="col-4 contains-tipbox">
+                <div class="tipbox">
+                    Living in a modded biome?  You can look up your biome on <a href="https://ftbwiki.org/Biome" target="_new">FTBWiki</a> and see what temperature 
+                    and humidity it is.
+                </div>
+            </div>
         </div>
         
-        <div class="row">
+        <div class="row contains-toggle-info" id="suggested-fixes">
             <div class="col">
-                <p>
                 <dl>
                     <dt>Industrial Apiaries with Biome Upgrades</dt>
                     <dd>This is the easiest fix since the environment in the apiary will simply be transformed into one the bee likes.  You can remove it when it's not needed.</dd>
@@ -77,91 +96,120 @@
                     <dd>This option isn't really feasible if you're just starting out, but it's a nice permanent fix that is passed on to the bee's descendants.</dd>
                     <dt>Breeding more tolerant bees manually</dt>
                     <dd>This takes a lot more time and patience, but it would also be a permanent alteration.</dd>
-                </dl>
-                </p>  
-            </div> 
-        </div>
-        
-        <div class="row">
-            <div class="col">
+                </dl> 
+
                 <p>Note that for the last two options, mutating bees in the Mutatron produces a standard bee of that type, so changes will be lost.</p>
-
-                <p>
-                    Living in a modded biome?  You can look up your biome on <a href="https://ftbwiki.org/Biome" target="_new">FTBWiki</a> and see what temperature and humidity it is.  Not mentioned
-                    are Mengelin is a cold biome.
-                </p> 
             </div> 
         </div>
         
         <div class="row">
             <div class="col">
-                <h2>Starting Bees</h2>
-
-                <h3>First steps:</h3>
+                <h2>Your First Steps:</h2>
                 <p>
-                The first thing you’ll want to do is make a scoop.  Trhis is the only tool that can safely break a hive found in the wild, otherwise you’ll get nothing from breaking it.  It has a low amount of durability, so you may want to upgrade to the Scooporator MX200 Turbo (powered/repaired with RF) or carry around spares.
-                [Note: sometimes hives do get broken by quarrying, such as rock hives and Buildcraft quarries, but for the most part, you’ll want a scoop.]
+                The first thing you’ll want to do is make a scoop.  This is the only tool that can safely break a hive found in the wild, otherwise you’ll get nothing from breaking it.  
+                It has a low amount of durability, so you may want to upgrade to the Scooporator MX200 Turbo (powered/repaired with RF) or carry around spares.
+                Sometimes other modded items work, such as Buildcraft quarries, but for the most part, you’ll want a scoop.
                 </p>
 
                 <p>
-                You’ll also want to consider a bag of sorts - Traveller’s Sack, satchel, ender pouch, etc.  Princesses won’t stack, so your inventory will fill up quick.  Also, bring a good amount of high-saturation food or some method of healing - the intended route is to use a Smoker, which can be obtained in villages or by trading with an apiarist villager, but I find that it’s quicker for me to just take the health hit and heal up while travelling to my next hive.
+                You’ll also want to consider a bag of sorts - Traveller’s Sack, satchel, ender pouch, etc.  Princesses won’t stack, so your inventory will fill up quick.  
+                Also, bring a good amount of high-saturation food or some method of healing - the intended route is to use a Smoker, which can be obtained in villages or by trading
+                 with an apiarist villager, but I find that it’s quicker for me to just take the health hit and heal up while travelling to my next hive.
                 </p>
+            </div>
+
+            <div class="col-4 contains-tipbox">
+                <img src="image/meadows-hive.png" alt="A Meadows Hive, with duck for comparison.">
+            </div>
+        </div>
+                
+        <div class="row">
+            <div class="col-8">    
                 <p>
-                When you start exploring, you’ll occasionally encounter a hive out in the wild.  
-                </p>
-                
-                
-                
-                <p>
-                Note that the hives to hunt should be from Forestry or Extra Bees, and they all have the distinctive horizontal bands across the entire hive.  Hives from other mods (ex. Pam’s Harvestcraft, Rustic, Animania) will not give you the bees you want for this!
+                Note that the hives to hunt should be from Forestry or Extra Bees, and they all have the distinctive horizontal bands across the entire hive.  Hives from other mods (ex. Pam’s 
+                Harvestcraft, Rustic, Animania) will not give you the bees you want for this!
                 </p>
 
                 <p>
                 When you get home with bees, you’ll want at least one apiary - the one you choose depends on how much you can afford right now:
-                Bee House: The starter housing, cannot do mutations and cannot be automated.  Cheapest to make, or can be found in villages.  Not recommended unless you can’t afford anything else.
-                Apiary: The basic housing from Forestry.  Can be automated with pipes.
-                Industrial Apiary: From Gendustry, easily automatable and can be configured with upgrades as needed.  Requires FE.
-                Alveary: Multiblock advanced apiary from Forestry.
+                <ul type="disc">
+                    <li><b>Bee House: </b> The starter housing, cannot do mutations and cannot be automated.  Cheapest to make, or can be found in villages.  Not recommended unless you can’t afford anything else.</li>
+                    <li><b>Apiary: </b> The basic housing from Forestry.  Can be automated with pipes. </li>
+                    <li><b>Industrial Apiary: </b> From Gendustry, easily automatable and can be configured with upgrades as needed.  Requires RF.</li>
+                    <li><b>Alveary: </b> Multiblock advanced apiary from Forestry.</li>
+                </ul>
                 </p>
+            </div>
 
+            <div class="col-4 contains-tipbox image-stacking">
+                <img src="image/industrial-apiary.png" alt="The Industrial Apiary">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
                 <p>
-                Make the Industrial Apiary if you can afford it.  You don’t need to worry about the upgrades from the start, and depending on where you’re setting up your bees, you may not even need them at all.  The other housing units are from Forestry, and you can use Frames to affect your bees, but these will gradually be consumed over time.  For the most part I’ll be using the term “apiary” in a generic sense, but assuming you’ll be making the Industrial Apiary eventually.
+                <b>Make the Industrial Apiary if you can afford it.</b>  You don’t need to worry about the upgrades from the start, and depending on where you’re setting up your bees, you may not even need them at all.  
+                The other housing units are from Forestry, and you can use Frames to affect your bees, but these will gradually be consumed over time.  For the most part I’ll be using the term “apiary” in a 
+                generic sense, but assuming you’ll be making the Industrial Apiary eventually.
                 </p>
-            </div>    
+            </div>
         </div>
         
         <div class="row">
             <div class="col">
                 <h2>Where do I put it?</h2>
                 <p>
-                Outside, with a clear view of the sky.  No leaves, though glass is okay.  At least one flower should be nearby.  Eventually there will be bees that have… unpleasant effects, and you may want a safer area to place them, but only jungle bees will have this problem from the start.
+                Outside, with a clear view of the sky.  No leaves, though glass is okay.  At least one flower should be nearby.  Eventually there will be bees that have… unpleasant effects, and you 
+                may want a safer area to place them, but only jungle bees will have this problem from the start.
                 </p>
             </div>
         </div> 
 
         <div class="row">
+            <div class="col-8">
+                <h2>Types of Bees From Hives:</h2>
+                <br />
+                    <button name="hive-types" value="false" id="hive-types-button" onClick="showMore('hive-types', this.value)">Hive Types - click to show info</button>
+            </div>
+            <div class="col-4 contains-tipbox">
+                <div class="tipbox">
+                    The Scanner from the Scannable mod is very handy.  Once you find a hive, you can use the block module to easily find more of that type.
+                </div>
+            </div>
+        </div>
+
+        <div class="row contains-toggle-info" id="hive-types">
             <div class="col">
-                <h2>Bees by Biome:</h2>
+                <h3>Forestry Bees:</h3>
+                <p>
+                <ul type="disc">
+                    <li><b>Meadow Bees:</b> Found in plains at ground level.  </li>
+                    <li><b>Forest Bees: </b> Found in forest underneath trees.  They can also spawn in modded trees.</li>
+                    <li><b>Modest Bees: </b> Found in deserts and savannahs, also at ground level. </li>
+                    <li><b>Marshy Bees: </b> Found in swamplands, on the ground.</li>
+                    <li><b>Jungle Bees: </b> Found in jungles, underneath trees.</li>
+                    <li><b>Wintry Bees: </b> Found in snowy biomes, extreme hills, taigas.</li>
+                    <li><b>Ender Bees: </b> Found on the surfaces of the End, both on the main and outer islands.</li>
+                    <li><b>Valiant Bees: </b> Found randomly when breaking any hive.</li>
+                    <li><b>Steadfast Bees: </b> Found in dungeon loot chests.</li>
+                    <li><b>Monastic Bees: </b> Obtained by trading with an Apiarist villager.</li>
+                </ul>
+                </p>
 
                 <p>
-                Just a reminder, modded biomes can have bees as well.  Their characteristics may cause some overlap between bee types, so you may find two types in one area. A fairly comprehensive list can be found here: https://ftbwiki.org/Biome
-                Forestry Bees:
-                Plains-like biomes will have meadow bees, that are found at ground level.  
-                Deserts will have modest bees, which are also at ground level.  
-                Swamps have marshy bees, which are found on the land.  
-                Forest biomes will have forest bees, which will be hanging from trees.  Note that they can show up in modded biomes, such as Redwood Forests from Biomes O’Plenty, but they will spawn at a significantly higher y-level compared to hives in a vanilla forest.
-                Cold biomes will have wintry bees.  This includes mountainous areas and taigas.
-                Jungles will have jungle bees, which also spawn in jungle trees at various heights. These are useful as these and their descendants are the only source of Silk Wisps, which can make Apiarist’s Armor to protect yourself from bee effects.
-                The End contains ender bee hives, which are commonly found along the surface and islands.  
-                Steadfast bees are only found as dungeon loot.
-                Monastic bees are acquired by trading with a villager with the apiarist career.  Note that there are no naturally spawned villages in the Options pack.
-                Extra Bees (Binnie’s Bees):
-                These are technically not base forestry bees, but you will probably encounter them in your exploring.  If going directly to Career Bees, you probably won’t need them for your breeding, but you may want to collect them anyways.
-                
-                Rocky Bees: You may find these while caving, but they can spawn enclosed in solid stone.  Look for the little bee effects when deep underground, and you’ll know you’re rather close to one.
-                Water Bees: These spawn commonly in rivers and lakes.
-                Embittered Bees: Nether bees that spawn in nether fortresses.
+                    These are technically not base forestry bees, but you will probably encounter them in your exploring.  If going directly to Career Bees, you probably won’t need them for 
+                    your breeding, but you may want to collect them anyways.
                 </p>
+
+                <h3>Extra Bees (Binnie's Bees)</h3>
+                <ul type="disc">
+                <li><b>Rocky Bees: </b> Found underground.  May encounter while caving, if you see little bee particles around, though they can also spawn encased in stone.</li>
+                <li><b>Water Bees: </b> These are found underwater.  Easiest to spot them when they happen to spawn in 1-block deep water, though they can spawn on the ocean floor.</li>
+                <li><b>Marble Bees: </b> These seem to be found around Quark marble deposits.</li>
+                <li><b>Embittered Bees: </b> These are found in the nether, supposedly around nether fortresses, though from my own (Creative Mode) searching, I didn't see a correlation.
+                It seemed that they could spawn at any height, even in the surface under the lava level, and in modded biomes.</li>
+                </ul>
             </div>
         </div>
             
@@ -169,7 +217,9 @@
             <div class="col">
                 <h2>I still can’t find any hives!</h2>
                 <p>
-                There’s a good chance other people may have been in the area you’ve been searching.  Gliding or flying is helpful.  Hives give off some light, so if you’re having trouble spotting them, you may have better results at nighttime.  You can also try other dimensions, as by default they can spawn in Aroma’s Mining Dimension, Lost Cities Dimension, ones created via RFTools / Mystcraft, etc.
+                There’s a good chance other people may have been in the area you’ve been searching.  Gliding or flying is helpful.  Hives give off some light, so if you’re having trouble 
+                spotting them, you may have better results at nighttime.  You can also try other dimensions, as by default they can spawn in Aroma’s Mining Dimension, Lost Cities Dimension, 
+                ones created via RFTools / Mystcraft, etc.
                 </p>
             </div>
         </div>
@@ -178,29 +228,59 @@
             <div class="col">
                 <h2>Breaking the Hives</h2>
                 <p>
-                When you break a hive with the scoop, you’ll always get a princess, and sometimes a drone and/or honeycomb.  You will also take roughly 4 hearts of health damage, unaffected by armor.  The princess is the most important loot from the hives - they come in two varieties, “pristine” and “ignoble”, which only really matters when trying to do force various mutations on them via Gendustry.
+                When you break a hive with the scoop, you’ll always get a princess, and sometimes a drone and/or honeycomb.  You will also take roughly 4 hearts of health damage, unaffected by armor.  The 
+                princess is the most important loot from the hives - they come in two varieties, “pristine” and “ignoble”, which only really matters when trying to do force various mutations on them via Gendustry.
                 
-                <dl>
-                Princess (Pristine): The best kind of bee.
-                Princess (Ignoble): Also important, though not as great as their pristine sisters.  These have a chance to die every life cycle; also has a chance of getting killed if operated on by various Gendustry machines.  Note that while it has a chance of dying every life cycle, many times they’ll life through several real world days of constant breeding without dying out, so don’t be too worried.  Also, if in a gendustry apiary, there are upgrades to prevent this routine death.
-                Drone: A male bee, relatively disposable.  You’ll need some to breed with a princess, but depending on the genes, you may end up with many more drones from one princess.  A drone is consumed when bred with a princess.  These are only used for breeding and dissolving for various machines.
-                Queen: An impregnated princess.  This is the stage where bee effects will happen, trees will get pollinated, etc.  When it dies (lifecycle is complete), the effects end, and a new princess and drone(s) will appear in the apiary as a result.  You will never get a Queen out in the wild, though sometimes you may find them in villages.
-                </dl>
+                <ul>
+                <li><b>Princess (Pristine): </b> The best kind of bee. Will not die to natural causes or genetic experimentation</li>
+                <li><b>Princess (Ignoble): </b> Also important, though not as great as their pristine sisters.  These have a chance to die every life cycle; also has a chance of getting killed if 
+                    operated on by various Gendustry machines.  Note that while it has a chance of dying every life cycle, many times they’ll life through several real world days of constant breeding 
+                    without dying out, so don’t be too worried.  Also, if in a gendustry apiary, there are upgrades to prevent this routine death.</li> 
+                <li><b>Drone: </b> A male bee, relatively disposable.  You’ll need some to breed with a princess, but depending on the genes, you may end up with many more drones from one princess.  A 
+                    drone is consumed when bred with a princess.  These are only used for breeding and dissolving for various machines.</li>
+                <li><b>Queen: </b> An impregnated princess.  This is the stage where bee effects will happen, trees will get pollinated, etc.  When it dies (lifecycle is complete), the effects end, 
+                    and a new princess and drone(s) will appear in the apiary as a result.  You will never get a Queen out in the wild, though sometimes you may find them in villages.</li>
+                </ul>
                 </p>
 
                 <p>
-                Note that the only way to get pristine bees is by chance, when breaking a wild hive.  (Though some species will always be pristine).  Ignoble ones can be artificially created via Gendustry.  Other mods may offer different options as well!
+                Note that the only way to get pristine bees is by chance, when breaking a wild hive.  Some species will always be pristine.  Ignoble ones can be artificially created via Gendustry.  
+                Other mods may offer different options as well!
                 </p>
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
                 <p>
-                To get started, you would put the princess and a drone in an apiary.  Top slot is the princess, bottom slot is the drone.  Select two different bees you’ve acquired and try to breed them.  I usually pick the ones I have the most of - for example, I tend to collect the most Forest and Meadows bees, so I prefer crossing those two first.  Plop a vanilla flower nearby as well.
-                [Tip: Forest bees naturally have 3 offspring as opposed to the standard 2 - very useful when manually breeding, so I often start with a Forest princess first.  Wintry bees start with 4 offspring.]
-                It’s working!
+                    To get started, you would put the princess (top) and a drone (bottom) in an apiary.  The bees will also require a flower nearby - most of the time a vanilla flower will do.  Since we're just 
+                    starting out, I suggest putting in a Forest Princess and a Meadows Drone.
                 </p>
-
                 <p>
-                After inserting the bees into an apiary, hopefully you’ll see a little progress bar, after which the princess and drone disappear, replaced by a queen bee.  If all is well, then there will be little bees emanating from the apiary, and possibly other effects depending on the bee.  In the apiary’s gui, you’ll see a little icon in the upper right hand corner indicating the status.  You can hover over that icon for more details.  Forestry Apiaries will have a little biome image with temperature and humidity information, while Industrial Apiaries will have a green checkmark that will tell you how much energy the apiary is drawing.
+                    After inserting the bees into an apiary, hopefully you’ll see a little progress bar, after which the princess and drone disappear, replaced by a queen bee.  If all is well, then there will be 
+                    little bees emanating from the apiary, and possibly other effects depending on the bee.  In the apiary’s gui, you’ll see a little icon in the upper right hand corner indicating the status.  
+                    You can hover over that icon for more details.  Forestry Apiaries will have a little biome image with temperature and humidity information, while Industrial Apiaries will have a green checkmark 
+                    that will tell you how much energy the apiary is drawing.
                 </p>
+            </div>
+
+            <div class="col-4 contains-tipbox image-stacking">
+                <img src="image/using-apiary.png" alt="Inserting bees into the apiary.">
+                <div class="tipbox">
+                    Forest bees naturally have 3 offspring instead of the standard 2, which is very useful when manually breeding.  Provided you live in a plains/forest, this is also the safest choice, 
+                    because the other basic bees have other environmental requirements that will very likely show up in the next generation or two.
+                </div>
+                
+            </div>
+                
+
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+
+            </div>
+            <div class="col-4 contains-tipbox image-stacking">
+                
             </div>
         </div>    
             
@@ -230,7 +310,17 @@
                 <p>
                                 Remember Mendelian genetics?  Every bee is made up of multiple genes (characteristics), which are expressed by two chromosomes, one from each parent.  So if we take a look at a one bee:
                 </p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col">
+                <img src="image/bee-analysis.png" alt="A bee as viewed in the Portable Analyzer.">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
                 [I]w pic of pure princess / hybrid princess
                 (This is by viewing a bee in the Portable Analyzer)
                 <p>          
@@ -259,21 +349,43 @@
                 All the characteristics will be scrambled like this after a breeding.  You can view these stats by crafting a Portable Analyzer (see below), which costs 1 drop of honey to use, though you can re-scan an identified bee as many times as you’d like afterwards.
                 </p>
             </div>
-        </div>    
+        </div>   
+        
+        <div class="row">
+            <div class="col">
+                    <p>
+                    But wait!  Certain bee combinations have the potential to mutate and turn into other species.  You can see the combinations 
+                    in JEI. So pairing up a Forest and Meadows has the potential (~15%) to produce the Common trait.  So you might end up with 
+                    a Forest-Meadows and a Common-Forest (or any similar combination) instead.
+                    </p>
+    
+                    <p>
+                    You can progress through the bees the intended way, and some of the bees will have certain quirks, like the hive needs to 
+                    be on a particular ore, the breeding needs to take place in a particular biome, or explosions are required.  There are even 
+                    frames for apiaries that will help.  However, if you’re <strike>lazy</strike> in a hurry to get to the good stuff, you’ll 
+                    want to use <a href="gendustry.html">Gendustry</a> to speed things along.
+                    </p>
+            </div>
+        </div>
             
         <div class="row">
             <div class="col-8">
                 <h2>Forestry Machines:</h2>
                 <p>
-                There are two machines you may want to make immediately from Forestry: the Carpenter and the Centrifuge.  The Carpenter will let you craft the Portable Analyzer, and the Centrifuge will let you process the honeycombs into honey drops and other miscellaneous loot.  If you are working without Gendustry, you also will want a squeezer to create seed oil from seeds, but otherwise you can skip this one.  If you are without RF, you can power these machines using a Clockwork Engine, which is basically a manual crank.
-                
+                There are two machines you may want to make from Forestry: the Carpenter and the Centrifuge.  The <b>Carpenter</b> will let you craft the 
+                Portable Analyzer, and the <b>Centrifuge</b> will let you process the honeycombs into honey drops and other miscellaneous loot.  The Portable Analyzer
+                requires a drop of honey each use, so you'll want to keep processing those honeycombs if you use the analyzer a lot.  These aren't as necessary
+                if you're strictly using Gendustry and not doing any manual breeding, since you will have the ability to choose your mutations easily.  However, 
+                it's very helpful if you forget what traits a particular bee has, or can't figure out what kind of flowers it wants.
                 </p>
-
+                <p>
+                    If you are working <b>without Gendustry</b>, you also will want a Squeezer to create seed oil from seeds, which is needed to make treated wood,
+                    Apiaries, etc.  This also accepts modded seeds, such as those from Pam's Harvestcraft and Actually Additions's Canola Seeds.  If you are without RF, 
+                    you can power these machines using a Clockwork Engine, which is basically a manual crank.
+                </p>
             </div>
-            <div class="col-4 contains-tipbox">
-                <div class="tipbox">
-                    If you are going to use the Squeezer, it does accept modded seeds, such as those from Pam’s Harvestcraft and Actually Additions’s Canola Seeds.
-                </div>
+            <div class="col-4 contains-tipbox image-stacking">
+                    <img src="image/portable-analyzer.png" alt="The Portable Analyzer">
             </div>
         </div>
             
@@ -281,14 +393,23 @@
             <div class="col">
                 <h2>Automation:</h2>
                 <p>
-                   Forestry apiaries can be automated by extracting from the sides and re-inserting princesses / drones through the top.  The machines should all allow pipe connections as well.  Gendustry machines and apiaries can also be automated with any mod’s pipes, but you can also use Covers to insert/extract/detect errors.
-                https://bdew.net/gendustry/covers/ 
+                   Forestry apiaries can be automated by extracting from the sides and re-inserting princesses / drones through the top.  The machines should all 
+                   allow pipe connections as well.  Gendustry machines and apiaries can also be automated with any mod’s pipes, but you can also use 
+                   <a href="https://bdew.net/gendustry/covers/" target="_new">Covers</a> to insert/extract/detect errors.
                 </p>
-                
-                
             </div>
         </div>    
+
+        <div class="row">
+            <div class="col">
+                <div class="footer">
+                    <a href="index.html">Main Page</a>
+                    <a href="gendustry.html">Gendustry</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="beescript.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

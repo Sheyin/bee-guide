@@ -1,5 +1,6 @@
 $yellow: #F0F905;
 $spring-green: #95E806;
+$green: #22A20A;
 $orange: #FBD503;
 $magenta: #770BA7;
 $dark-grey: #3D3D37;
@@ -19,11 +20,11 @@ a {
 }
 
 a:link {
-    color: $spring-green;
+    color: $green;
 }
 
 a:visited {
-    color: $spring-green;
+    color: $green;
 }
 
 a:focus {
@@ -97,15 +98,7 @@ a:active {
     justify-content: space-evenly;
 }
 
-body {
-    background-image: url("image/main-flower-exploded.jpg");
-    background-repeat: repeat-x;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: contain;
-    color: $dark-grey;
-    height: 100%;
-}
+
 
 #main-choice-intro {
     background-image: url("image/buttonHive1.jpg");
@@ -179,10 +172,77 @@ body {
     align-items: center;
 }
 
+.contains-toggle-info {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+    background-color: $light-grey;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .col {
+        border: 3px dashed $dark-grey;
+        border-radius: 10px;
+        background-color: $orange;
+        padding: 10px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    a {
+        font-size: 2em;
+    }
+}
+
 html {
+    width: 100%;
     height: 100%;
 }
 
+.row {
+    background-color: $light-grey;
+
+    img {
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.col-4 {
+    img {
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.image-stacking {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+        padding-bottom: 20px;
+    }
+}
+
+.bee-lineage {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    img {
+        padding-bottom: 20px;
+    }
+}
 
 @media (min-width: 600px) {
     /* Possible override some of bootstrap's defaults */
@@ -193,15 +253,31 @@ html {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    body {
+        background-image: url("image/main-flower-exploded.jpg");
+        background-repeat: repeat-x;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: contain;
+        color: $dark-grey;
+        height: 100%;
+    }
 }
 
 @media (max-width: 599px) {
     /* Possible override some of bootstrap's defaults */
     .container-addon {
-        max-width: 95%;
         background-color: $light-grey;
+        width: 100%;
         height: 100%;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    body {
+        color: $dark-grey;
+        width: 100%;
+        height: 100%;
     }
 }
