@@ -26,7 +26,11 @@
         <div class="row">
             <div class="col">
                 <h2>The Mutagen Producer and (Advanced) Mutatron</h2>
-            
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
                 <p>
                 The first machine you’ll need is the <a href="https://bdew.net/gendustry/mutagen-producer/">Mutagen Producer</a>.  This will 
                 convert certain materials into liquid Mutagen, which is required to power the <a href="https://bdew.net/gendustry/mutatron/">Mutatron</a>.  I usually use Redstone Blocks for this, 
@@ -38,39 +42,38 @@
                 The Mutatron is the second most important machine.  It will consume Mutagen to force a mutation and is a huge time-saver.  It also bypasses 
                 all mutation requirements.  If you can afford to do so, I strongly recommend immediately upgrading to the <b>Advanced Mutatron</b>, which will 
                 give you the ability to choose your resulting mutation, as some species have multiple results.  Note that the mutation process has the 
-                chance to kill ignoble princesses.  I haven’t run enough tests to guess at the rate of deaths, but it doesn’t seem too high.
+                <b>chance to kill ignoble princesses</b>.  I haven’t run enough tests to guess at the rate of deaths, but it doesn’t seem too high.
                 </p>
-
-                <p>
-                Tip: When mutating, it isn’t necessary to have a purebred - just needs to have that species as the active trait.  So if the bee is half 
-                Common, half Forest, it will be treated like any other common bee when mutating.
-                </p> 
             </div>   
-        </div>
+              
+            <div class="col-md-4 contains-tipbox image-stacking">
+                <div class="tipbox">
+                    When mutating, it isn’t necessary to have a purebred - just needs to have that species as the active trait.  So if the bee is half 
+                    Common, half Forest, it will be treated like any other common bee when mutating.
+                </div>
+            </div>
+        </div>              
         
         <div class="row">
             <div class="col">
                <h2>The Sampler and Imprinter</h2>
-                <p>
-                Another set of Gendustry machines that is the Sampler and Imprinter.  Basically, you can sacrifice bees in order to get a copy of a specific 
-                gene (trait), which you can then use in an imprinter/template to alter bees.  So, if you want your bees to act faster, you’d want to obtain 
-                bees with the fastest trait (you can look these up in JEI).  If you want ones with a larger territory / range, produce some of those.  Each 
-                bee sacrificed will produced one gene randomly out of whatever active and inactive ones it possesses.  You can sacrifice princesses, but it’s 
-                a waste.  Gene samples can be recycled by smelting them.
-                </p>
-
-                
-
             </div>
         </div>
         <div class="row">
             <div class="col-md-8">
                 <p>
+                Another set of Gendustry machines that is the Sampler and Imprinter.  Basically, you can sacrifice bees in order to get a copy of a specific 
+                trait, which you can then use in an imprinter/template to alter bees.  So, if you want your bees to act faster, you’d want to obtain 
+                bees with the fastest trait (you can look these up in JEI).  If you want ones with a larger territory / range, produce some of those.  Each 
+                bee sacrificed will produced one gene randomly out of whatever active and inactive ones it possesses.  You can sacrifice princesses, but it’s 
+                a waste.  Gene samples can be recycled by smelting them.
+                </p>
+                <p>
                 When you have gene(s) you like, you can add them to a template simply by crafting them (one-by-one or multiple) together with a template.  The 
-                gene is consumed and permanently added to the template.  Blank ones will not change the characteristics of the bee it is used on, so if you 
-                wanted to make your Rocky Bees have 4 offspring instead of the default 1, you could sacrifice Majestic drones until you get the offspring: 4 
-                trait, then add it to a template.  If you were to use this template, every characteristic would remain the same except for the offspring, 
-                which would take on the new 4 offspring trait.
+                gene is consumed and permanently added to the template.  <b>Blank characteristics in a template will not change those characteristics of the bee 
+                it is used on</b>, so if you wanted to make your Rocky Bees have 4 offspring instead of the default 1, you could sacrifice Majestic drones until 
+                you get the offspring: 4 trait, then add it to a template.  If you were to use this template, every characteristic would remain the same except 
+                for the offspring, which would take on the new 4 offspring trait.
                 </p>
                 
                 <p>
@@ -79,7 +82,7 @@
                 </p>
 
                 <p>
-                If you want to copy samples or templates, you can use the Genetic Transposer.
+                If you want to copy samples or templates, you can use the <b>Genetic Transposer</b>.
                 </p> 
             </div>
 
@@ -127,7 +130,7 @@
 
         <div class="row">
             <div class="col-md-8">
-                <h2>Industrial Apiaries & Upgrades</h2>
+                <h2 id="apiaryupgrades">Industrial Apiaries & Upgrades</h2>
                 <p>
                     So if you’ve been going the Gendustry route, you’ve probably already made a few of these already.  There are 4 slots in the middle of each 
                     Industrial Apiary which can be used for upgrades.  Some allow multiple copies of a particular upgrade; each upgrade (including duplicates) 
@@ -136,14 +139,15 @@
             
                     <ul>
                         <li><b>Automation Upgrade: </b>
-                            Great for mass-producing drones, cloning a bee (breeding a random princess with ~5-7 of a species to change it to), getting bee 
-                            products.  Once a queen’s lifecycle is complete, it automatically takes the princess and breeds it with whatever is in the drone 
-                            slot or a random drone from the output slots.  If you have pipes extracting from your apiary, this will breed the princesses first 
-                            before it can be removed.  However, this will not work if your apiary’s output slots are full.
+                            A must-have upgrade, it is great for mass-producing drones, cloning a bee (breeding a random princess with ~5-7 of a different drone), 
+                            getting bee products / constant effects.  Once a queen’s lifecycle is complete, it automatically takes the princess and breeds it with 
+                            whatever is in the drone slot, otherwise it will select a random drone from the output slots.  If you have pipes extracting from your 
+                            apiary, this will breed the princesses first before it can be extracted.  However, this upgrade will not work if your apiary’s output 
+                            slots are full.
                         </li>
                         
                         <li><b>Light Upgrade: </b>
-                        Provides constant daylight for your bees.  If you modify your bees to be nocturnal, this isn’t necessary.
+                            Provides constant daylight for your bees.  If you modify your bees to be nocturnal, this isn’t necessary.
                         </li>
 
                         <li><b>Open Sky Upgrade: </b>
@@ -161,12 +165,12 @@
                         </li>
                         
                         <li><b>Territory: </b>
-                        You can use this to greatly enhance your bee’s effect range; I mostly use these with Career Bees.  For example, having territory: largest and four territory upgrades 
-                        lets Police Bees reach about a 100 block radius around the apiary.
+                            You can use this to greatly enhance your bee’s effect range; I mostly use these with Career Bees.  For example, having territory: largest 
+                            and four territory upgrades lets bees reach about a 100 block radius around the apiary.
                         </li>
 
                         <li><b>Production:</b>
-                            This will increase the amount of bee products/effects generated.  I use these with energy bees to increase the amount of energy filled per tick.
+                            This will increase the amount of bee products/effects generated.  I use these with Energy Bees to increase the amount of energy filled per tick.
                         </li>
 
                         <li><b>Stabilizer: </b>
@@ -211,7 +215,7 @@
                 <h2>What about Binnie’s Genetics?</h2>
                 <p>
                 It’s been a very long time since I’ve delved into Binnie’s mods, aside from some of the bees, so I’m not comfortable talking about it in 
-                a guide.  The machines have been revamped and the principles look pretty cool, but I haven’t taken the time to explore them yet.  From 
+                a guide.  The machines have been revamped and the principles look pretty cool, but I just haven’t taken the time to explore them yet.  From 
                 looking at the wiki and from what I remember, there are similar options to tailor specific bees to your liking by getting specific genes and 
                 acclimatizing their temperature tolerances so you can breed bees in a particular biome.  These can also be covered using Gendustry 
                 machines (Sampler/Imprinter, throwing a biome upgrade or temperature upgrades into the Industrial Apiary), so if you are going the 

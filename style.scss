@@ -165,6 +165,8 @@ a:active {
 .contains-tipbox {
     display: flex;
     align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .contains-toggle-info {
@@ -201,6 +203,8 @@ html {
 }
 
 .col-md-4 {
+    padding-left: 5%;
+    padding-right: 5%;
     img {
         width: 200px;
         margin-left: auto;
@@ -332,7 +336,7 @@ h2 {
         max-width: 45%;
     }
     .header-title {
-        font-size: 3em;
+        font-size: 5em;
     }
     h1 {
         font-size: 5em;
