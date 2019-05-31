@@ -247,7 +247,8 @@ html {
 }
 
 .image-stacking img {
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .bee-lineage {
@@ -258,13 +259,19 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bee-lineage img {
-  padding-bottom: 20px;
+  max-width: 30px;
+}
+
+.lineage-arrow {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 3em;
 }
 
 @media (min-width: 600px) {

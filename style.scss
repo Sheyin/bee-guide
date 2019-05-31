@@ -231,17 +231,24 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     img {
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
 .bee-lineage {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     img {
-        padding-bottom: 20px;
+        max-width: 30px;
     }
+}
+
+.lineage-arrow {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3em;
 }
 
 @media (min-width: 600px) {

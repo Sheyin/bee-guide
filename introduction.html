@@ -107,8 +107,8 @@
                 <h2>Your First Steps:</h2>
                 <p>
                 The first thing you’ll want to do is make a scoop.  This is the only tool that can safely break a hive found in the wild, otherwise you’ll get nothing from breaking it.  
-                It has a low amount of durability, so you may want to upgrade to the Scooporator MX200 Turbo (powered/repaired with RF) or carry around spares.
-                Sometimes other modded items work, such as Buildcraft quarries, but for the most part, you’ll want a scoop.
+                It has a low amount of durability, so you may want to upgrade to the <a href="https://bdew.net/gendustry/industrial-scoop/" target="_new">Scooporator MX200 Turbo</a> 
+                (powered/repaired with RF) or carry around spares.  Sometimes other modded items work, such as Buildcraft quarries, but for the most part, you’ll want a scoop.
                 </p>
 
                 <p>
@@ -126,8 +126,9 @@
         <div class="row">
             <div class="col-8">    
                 <p>
-                Note that the hives to hunt should be from Forestry or Extra Bees, and they all have the distinctive horizontal bands across the entire hive.  Hives from other mods (ex. Pam’s 
-                Harvestcraft, Rustic, Animania) will not give you the bees you want for this!
+                The hives you want are going to have distinctive horizontal bands all around the hive.  (See picture.)  Note that the hives to hunt should be from Forestry or 
+                Extra Bees, and they all have the distinctive horizontal bands across the entire hive.  Hives from other mods (ex. Pam’s Harvestcraft, Rustic, Animania) will not give 
+                you the bees you want for this!  Most bees, including those from Career Bees, can only be obtained by breeding/mutating these basic bees..
                 </p>
 
                 <p>
@@ -290,15 +291,30 @@
                 <p>
                 This is not unusual!  When you open up the apiary’s gui, look in the upper right hand corner, and it will tell you what’s wrong.
                 <dl>
-                Not Daytime/Nighttime: Many bees only operate in the daytime, and the lifecycle is simply paused when it is night.
-                Too Hot/Too Cold/Too Wet/Too Dry: The bee doesn’t like the climate you’re trying to breed it in.  This can be fixed by relocating the apiary to a suitable biome, adding upgrades to your Industrial Apiary, or modifying the bee to have a different temperature/humidity tolerance.  It may have tolerated the biome previously, but sometimes introducing different tolerances can cause them to reject the climate entirely.
-                Can’t see the sky: Most bees only operate in full view of the open sky (glass is okay).  A few species will be comfortable underground or on the surface.
-                Raining: Most bees don’t like the rain / snow by default.
-                Flowers missing: Bees need a “flower” nearby to work.  Note that some bees require something other than your standard flower (but the warning message will still call it a flower).  For example, Jungle Bees require vines to operate.  This trait can change with breeding as well! Note that if you do add the flower, sometimes it takes a minute for the bees to recognize that it is there.  I’ve sometimes broken and re-placed Industrial Apiaries, which seems to help speed it up, but I’m not sure if it’s really a fix.
-                No queen/No drone: You’re missing one of the two required bees on the left hand side to begin breeding.  Having a princess and drone in the right-hand side (results) doesn’t count! (Industrial Apiaries will show this error; Forestry ones simply won’t work)
-                
-                No inventory space: You’ve been using this apiary awhile and the right-hand inventory is full.  Simply remove some of the items from the right hand side, and the apiary will resume operations.  (Industrial Apiaries will show this error; Forestry ones simply won’t work)
-                Not enough power: Your apiary isn’t receiving enough power.  Note that each upgrade increases the power demands.  You can see how much is needed by hovering over the icon in the upper right hand side.
+                <dt>Not Daytime/Nighttime:</dt> 
+                <dd>Many bees only operate in the daytime, and the lifecycle is simply paused when it is night.</dd>
+                <dt>Too Hot/Too Cold/Too Wet/Too Dry:</dt> 
+                <dd>The bee doesn’t like the climate you’re trying to breed it in.  This can be fixed by relocating the apiary to a suitable biome, 
+                adding upgrades to your Industrial Apiary, or modifying the bee to have a different temperature/humidity tolerance.  It may have tolerated the biome previously, 
+                but sometimes introducing different tolerances can cause them to reject the climate entirely.</dd>
+                <dt>Can’t see the sky:</dt> 
+                <dd>Most bees only operate in full view of the open sky (glass is okay, but not leaves).  A few species will be comfortable underground or on the surface.</dd>
+                <dt>Raining:</dt> 
+                <dd>Most bees don’t like the rain / snow by default.</dd>
+                <dt>Flowers missing:</dt> 
+                <dd>Bees need a “flower” nearby to work.  Note that some bees require something other than your standard flower (but the warning message will 
+                still call it a flower).  For example, Jungle Bees require vines to operate, Sinister Bees need Nether Wort, etc.  This trait can change with breeding as well! 
+                Note that if you do add a flower, sometimes it takes a minute for the bees to recognize that it is there.  I’ve sometimes broken and re-placed Industrial Apiaries, 
+                which seems to help speed it up, but I’m not sure if it’s really a fix.</dd>
+                <dt>No queen/No drone: </dt>
+                <dd>You’re missing one of the two required bees on the left hand side to begin breeding.  Having a princess and drone in the right-hand side (results) 
+                doesn’t count! (Industrial Apiaries will show this error; Forestry ones simply won’t work.)</dd>
+                <dt>No inventory space:</dt> 
+                <dd>You’ve been using this apiary awhile and the right-hand inventory is full.  Simply remove some of the items from the right hand side, and the 
+                apiary will resume operations.  (Industrial Apiaries will show this error; Forestry ones simply won’t work.)</dd>
+                <dt>Not enough power:</dt> 
+                <dd>Your apiary isn’t receiving enough power.  Note that each upgrade increases the power the apiary uses per tick.  You can see how much is needed by hovering over 
+                the icon in the upper right hand side.</dd>
                 </dl>
                 </p>
             </div>
@@ -308,51 +324,39 @@
             <div class="col">
                 <h2>So how does breeding work?</h2>
                 <p>
-                                Remember Mendelian genetics?  Every bee is made up of multiple genes (characteristics), which are expressed by two chromosomes, one from each parent.  So if we take a look at a one bee:
+                    Remember <a href="https://www.ducksters.com/science/biology/hereditary_patterns.php" target="_new">Mendelian genetics</a>?  Bees operate on the same principle, with one gene 
+                    "active" and the other "inactive".  So if you see the following image...
                 </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <img src="image/bee-analysis.png" alt="A bee as viewed in the Portable Analyzer.">
+                <img src="image/analysis-pure.png" alt="A bee as viewed in the Portable Analyzer.">
+                <p>
+                    This is the view of a bee when you use a <a href="#forestrymachines">Portable Analyzer</a>.  The one above has identical genes in both the active and inactive categories - it's basically what you get when you
+                    get a princess fresh from a have.  Now compare it to the one below:
+                </p>
+                <img src="image/analysis-hybrid.png" alt="A bee with mixed genes, viewed in the Portable Analyzer.">
+                <p>
+                    This one has mixed genes in the active and inactive categories, because this is the result of a cross between a Forest bee and a Meadows bee.  For mutation / effect purposes,
+                    only the traits in the "Active" category count.
+                </p>
+                <img src="image/analysis-modest.png" alt="A bee that is a cross between a Modest and Meadows.">
+                <img src="image/analysis-modest2.png" alt="Modest-Meadows bee, with its secondary traits.">
+                <p>
+                    This bee is a cross between a Modest princess and a Meadows drone, which had to be bred in desert temperatures..  The result is very mixed, but for breeding/mutating purposes, 
+                    this is a Meadows Princess now and it will only work in a plains biome (or at least, lower temperature).  <b>The species of bee determines what kind of base biome/environment it
+                    prefers.</b>  However, the tolerances (in the second image) will let it be comfortable in slightly hotter or slightly colder climates.  (The difference between Plains and Desert is +/- 2
+                    though, this bee only has +/- 1 - which means it won't work in a desert without upgrades/modifications.)
+                </p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                [I]w pic of pure princess / hybrid princess
-                (This is by viewing a bee in the Portable Analyzer)
-                <p>          
-                So if you compare these princesses, one is a purebred - has all matching genes, while the other has mixed characteristics.  So the one on the left is easy - it will express all of these characteristics, but the one on the right, it will only express the ones on the left hand side (active).  The ones on the right (inactive) won’t really matter except when breeding.
-                </p>
-
-                <p>
-                    In a drone, their characteristics will only matter for breeding, since the drone is immediately consumed when bred with a princess.
-                </p>
-                
-                <p>
-                So, lets say we breed a pure Forest Princess with a pure Meadows Drone.  These are the possible combinations:
-                
-                    Forest-Meadows		Forest-Meadows
-                    Forest-Meadows		Forest-Meadows
-                </p>
-
-                <p>
-                But, if we did two hybrid Forest-Meadows you could expect:
-                
-                    Forest-Forest			Forest-Meadows
-                    Meadows-Forest		Meadows-Meadows
-                </p>
-
-                <p>
-                All the characteristics will be scrambled like this after a breeding.  You can view these stats by crafting a Portable Analyzer (see below), which costs 1 drop of honey to use, though you can re-scan an identified bee as many times as you’d like afterwards.
-                </p>
-            </div>
-        </div>   
         
         <div class="row">
             <div class="col">
+                <h2>Mutations</h2>
                     <p>
                     But wait!  Certain bee combinations have the potential to mutate and turn into other species.  You can see the combinations 
                     in JEI. So pairing up a Forest and Meadows has the potential (~15%) to produce the Common trait.  So you might end up with 
@@ -367,16 +371,118 @@
                     </p>
             </div>
         </div>
+
+        <div class="row">
+                <div class="col">
+                    <h2>Which bees should I breed first?</h2>
+                    <p>
+                    Generally, you’ll want to do the main Forestry breeding path:
+                    <div class="bee-lineage">
+                        <div>(Any two different hive bees)
+                            <img src="image/forest-princess.png" alt="Forest Princess">
+                            <img src="image/meadows-drone.png" alt="Meadows Drone">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>Common Bee
+                            <img src="image/common-queen.png" alt="Common Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>Cultivated Bee
+                            <img src="image/cultivated-queen.png" alt="Cultivated Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>Noble Bee
+                            <img src="image/noble-queen.png" alt="Noble Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>Majestic Bee
+                            <img src="image/majestic-queen.png" alt="Majestic Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>Imperial Bee
+                            <img src="image/imperial-queen.png" alt="Imperial Queen">
+                        </div>
+                    </div>
+                    
+                    </p>
+    
+                    <p>
+                    These bees tend to be used in various mutations, even with addon bees such as Career Bees.  Another important (Forestry) path would be:
+                    <div class="bee-lineage">
+                        <div>
+                            Cultivated
+                            <img src="image/cultivated-queen.png" alt="Cultivated Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>Diligent
+                            <img src="image/diligent-queen.png" alt="Diligent Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>
+                            Unweary
+                            <img src="/image/unweary-queen.png" alt="Unweary Queen">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>
+                            Industrious
+                            <img src="image/industrious-queen.png" alt="Industrious Queen">
+                        </div>
+                    </div>
+                    </p>
+    
+                    <p>
+                    Finally, don’t forget to make hell bees (Sinister Bees).  These also are commonly used in various mutations!
+                    <div class="bee-lineage">
+                        <div>Modest + Cultivated <br />(in Nether / Mutatron)
+                            <img src="image/modest-princess.png" alt="Modest Princess">
+                            <img src="image/cultivated-drone.png" alt="Cultivated Drone">
+                        </div>
+                        <div class="lineage-arrow">🡆</div>
+                        <div>
+                            Sinister Bee
+                            <img src="image/sinister-queen.png" alt="Sinister Queen">
+                        </div>
+                    </div>
+                    </p>    
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col">
+                    <h2>Effects</h2>
+                    <p>
+                    So, bees can have effects, which only become active while they are breeding (a Queen).  Most of them are pretty good - the whole point of 
+                    Career Bees is to get their awesome, mostly helpful effects.  Many are mostly benign, like the heroic or beatific effect, and there are 
+                    many bees with none at all.Some of them, as found mostly in Forestry or Extra Bees, can be negative.  
+                    </p>
+
+
+                    <p>
+                        <b>If you're just going into this just for Career Bees - great!  Nothing to worry about.</b>  Pretty much all the bees except for maybe one will have
+                    no harmful effects at all.  The actual effects are listed in the <a href="careerbees.html">Career Bees</a> section and on the  
+                    <a href="https://minecraft.curseforge.com/projects/career-bees" target="_new">Career Bees Curseforge site</a>.
+                    </p>
+
+                    <p>
+                    There are too many effects to really go over, but many are pretty similar, particularly among branches of bees.  
+                    <b>This warning is more for Forestry/Extra bees - some effects can be harmful and/or world-destroying</b>.  Examining the bee with a 
+                    Portable Analyzer will tell you the name and give you a pretty good idea of whether it is harmful or not.  I suggest simply experimenting for 
+                    fun, but if you’re really concerned, you can look up the <a href="https://ftbwiki.org/Effect" target="_new">effects</a>.  A distant corner of 
+                    land is usually sufficient; you can make Apiarist’s armor to protect yourself from harmful effects.  I only mention this because you may go into 
+                    different types of bees to get different traits, which may lead to experiencing various effects.
+                    </p>
+                </div>
+            </div>
             
         <div class="row">
             <div class="col-8">
-                <h2>Forestry Machines:</h2>
+                <h2 id="#forestrymachines">Forestry Machines:</h2>
                 <p>
                 There are two machines you may want to make from Forestry: the Carpenter and the Centrifuge.  The <b>Carpenter</b> will let you craft the 
-                Portable Analyzer, and the <b>Centrifuge</b> will let you process the honeycombs into honey drops and other miscellaneous loot.  The Portable Analyzer
-                requires a drop of honey each use, so you'll want to keep processing those honeycombs if you use the analyzer a lot.  These aren't as necessary
-                if you're strictly using Gendustry and not doing any manual breeding, since you will have the ability to choose your mutations easily.  However, 
-                it's very helpful if you forget what traits a particular bee has, or can't figure out what kind of flowers it wants.
+                <b>Portable Analyzer</b>, and the <b>Centrifuge</b> will let you process the honeycombs into honey drops and other miscellaneous loot.  The Portable Analyzer
+                requires a drop of honey each use, so you'll want to keep processing those honeycombs if you use the analyzer a lot.  You can re-scan a bee you've already scanned
+                at no cost, however.  These aren't as necessary if you're strictly using Gendustry and not doing any manual breeding, since you will have the ability to choose your 
+                mutations easily.  However, it's very helpful if you forget what traits a particular bee has, or can't figure out what kind of flowers it wants.
                 </p>
                 <p>
                     If you are working <b>without Gendustry</b>, you also will want a Squeezer to create seed oil from seeds, which is needed to make treated wood,
