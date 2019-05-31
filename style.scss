@@ -16,7 +16,7 @@ h1 {
 
 a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 a:link {
@@ -133,11 +133,6 @@ a:active {
     padding: 10px;
     text-align: justify;
     vertical-align: center;
-
-    a {
-        text-decoration: none;
-        font-weight: bold;
-    }
     
     a:link {
         color: $magenta;
@@ -190,16 +185,6 @@ a:active {
     }
 }
 
-.footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-    a {
-        font-size: 2em;
-    }
-}
-
 html {
     width: 100%;
     height: 100%;
@@ -210,16 +195,14 @@ html {
 
     img {
         width: 85%;
-        display: block;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-.col-4 {
+.col-md-4 {
     img {
         width: 200px;
-        display: block;
         margin-left: auto;
         margin-right: auto;
     }
@@ -236,22 +219,22 @@ html {
     }
 }
 
-.bee-lineage {
+
+.footer {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    img {
-        max-width: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    a {
+        font-size: 2em;
     }
 }
 
-.lineage-arrow {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 3em;
+h2 {
+    margin-top: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 770px) {
     /* Possible override some of bootstrap's defaults */
     .container-addon {
         max-width: 70%;
@@ -259,6 +242,35 @@ html {
         height: 100%;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .bee-lineage {
+        font-size: 0.75em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        img {
+            max-width: 30px;
+        }
+        .lineage-arrow {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 3em;
+        }
+        .image-stacking {
+            justify-content: start;
+            img {
+                padding-top: 3px;
+                padding-bottom: 3px; 
+            }
+        }
+    }
+
+    .show-when-large {
+        display: inherit;
+    }
+    .show-when-small {
+        display: none;
     }
 
     body {
@@ -272,7 +284,7 @@ html {
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 769px) {
     /* Possible override some of bootstrap's defaults */
     .container-addon {
         background-color: $light-grey;
@@ -286,5 +298,43 @@ html {
         color: $dark-grey;
         width: 100%;
         height: 100%;
+    }
+
+    .bee-lineage {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 0.75em;
+        img {
+            max-width: 25px;
+        }
+        .lineage-arrow {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 2em;
+        }
+        .image-stacking {
+            justify-content: start;
+            img {
+                padding-top: 3px;
+                padding-bottom: 3px; 
+            }
+        }
+    }
+
+    .show-when-large {
+        display: none;
+    }
+    .show-when-small {
+        display: inherit;
+    }
+    .img-smaller {
+        max-width: 45%;
+    }
+    .header-title {
+        font-size: 3em;
+    }
+    h1 {
+        font-size: 5em;
     }
 }

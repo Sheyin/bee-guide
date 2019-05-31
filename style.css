@@ -8,7 +8,7 @@ h1 {
 
 a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 a:link {
@@ -132,11 +132,6 @@ a:active {
   vertical-align: center;
 }
 
-.tipbox a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .tipbox a:link {
   color: #770BA7;
 }
@@ -191,23 +186,6 @@ a:active {
   padding: 10px;
 }
 
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer a {
-  font-size: 2em;
-}
-
 html {
   width: 100%;
   height: 100%;
@@ -219,14 +197,12 @@ html {
 
 .row img {
   width: 85%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.col-4 img {
+.col-md-4 img {
   width: 200px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -251,30 +227,28 @@ html {
   padding-bottom: 30px;
 }
 
-.bee-lineage {
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.bee-lineage img {
-  max-width: 30px;
+.footer a {
+  font-size: 2em;
 }
 
-.lineage-arrow {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 3em;
+h2 {
+  margin-top: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 770px) {
   /* Possible override some of bootstrap's defaults */
   .container-addon {
     max-width: 70%;
@@ -282,6 +256,42 @@ html {
     height: 100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .bee-lineage {
+    font-size: 0.75em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bee-lineage img {
+    max-width: 30px;
+  }
+  .bee-lineage .lineage-arrow {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3em;
+  }
+  .bee-lineage .image-stacking {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .bee-lineage .image-stacking img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .show-when-large {
+    display: inherit;
+  }
+  .show-when-small {
+    display: none;
   }
   body {
     background-image: url("image/main-flower-exploded.jpg");
@@ -294,7 +304,7 @@ html {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 769px) {
   /* Possible override some of bootstrap's defaults */
   .container-addon {
     background-color: #F4F7EF;
@@ -307,6 +317,51 @@ html {
     color: #3D3D37;
     width: 100%;
     height: 100%;
+  }
+  .bee-lineage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.75em;
+  }
+  .bee-lineage img {
+    max-width: 25px;
+  }
+  .bee-lineage .lineage-arrow {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+  }
+  .bee-lineage .image-stacking {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .bee-lineage .image-stacking img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .show-when-large {
+    display: none;
+  }
+  .show-when-small {
+    display: inherit;
+  }
+  .img-smaller {
+    max-width: 45%;
+  }
+  .header-title {
+    font-size: 3em;
+  }
+  h1 {
+    font-size: 5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
